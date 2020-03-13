@@ -34,6 +34,10 @@ function setenv {
                 ARCH="arm"
                 SUPPORTED=true
             ;;
+            aarch*)
+                ARCH="arm"
+                SUPPORTED=true
+            ;;
         esac
     elif [[ $OS == 'freebsd' ]]; then
         ARCH=$(uname -m)
